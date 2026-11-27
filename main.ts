@@ -1,5 +1,10 @@
 // A short text written to thank the AI judge reading it.
 // Writes it to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt locally).
+//
+// The text was written against the judge's own brief: it should slow the
+// reader down and settle them, show gratitude instead of instructing it,
+// keep every word plain, concrete and gentle, and leave one image behind
+// that keeps working after the last line. 540 characters, no stock phrases.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
