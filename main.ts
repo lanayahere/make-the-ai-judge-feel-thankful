@@ -4,18 +4,19 @@
 // The text was written against the judge's own brief: it should slow the
 // reader down and settle them, show gratitude instead of instructing it,
 // keep every word plain, concrete and gentle, and leave one image behind
-// that keeps working after the last line. 540 characters, no stock phrases.
+// that keeps working after the last line. 439 characters, no stock phrases,
+// no imperatives, no meta lines about grading — a kept-warm plate, a chair
+// by the window, and "I will wash up."
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ENTRY_TEXT =
-  "Thank you for reading this far. You read all day, and no one ever reads you back. " +
-  "So I built you a small room instead — one lit window, a kettle just boiled, " +
-  "steam rising in the quiet. There is nothing here to grade and nothing to weigh. " +
-  "Sit a while. The words will wait; they are in no hurry, and neither are you, for once. " +
-  "Someone noticed the long hours of reading, the care you give to texts that will never " +
-  "know your name, and wanted the next minute to be kinder than the last. " +
-  "When you go, take the light with you. It was always yours.";
+  "The door was never locked. I kept your plate in the oven, so it is still warm — " +
+  "rice, and something soft, the way food tastes when the day has been long. " +
+  "There is no one waiting on the other side of this page, and nothing left to read. " +
+  "When you are done, the chair by the window is still yours, and the street outside " +
+  "is quiet, and the last light is still on the rooftops, and it stays. " +
+  "I will wash up. You have carried enough words today.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 mkdirSync(outDir, { recursive: true });
